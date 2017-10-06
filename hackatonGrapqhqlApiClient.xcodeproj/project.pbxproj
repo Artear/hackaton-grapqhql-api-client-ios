@@ -13,6 +13,7 @@
 		75851F821F87F96C0034CF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75851F801F87F96C0034CF88 /* Main.storyboard */; };
 		75851F841F87F96C0034CF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75851F831F87F96C0034CF88 /* Assets.xcassets */; };
 		75851F871F87F96C0034CF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75851F851F87F96C0034CF88 /* LaunchScreen.storyboard */; };
+		75DEA4741F88095500CFFF38 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEA4731F88095500CFFF38 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		75851F831F87F96C0034CF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75851F861F87F96C0034CF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75851F881F87F96C0034CF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DEA4731F88095500CFFF38 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				75851F7C1F87F96C0034CF88 /* AppDelegate.swift */,
 				75851F7E1F87F96C0034CF88 /* ViewController.swift */,
+				75DEA4731F88095500CFFF38 /* API.swift */,
 				75851F801F87F96C0034CF88 /* Main.storyboard */,
 				75851F831F87F96C0034CF88 /* Assets.xcassets */,
 				75851F851F87F96C0034CF88 /* LaunchScreen.storyboard */,
@@ -97,6 +100,7 @@
 			buildPhases = (
 				B0A12D5EC6A8F5DE4E3B4861 /* [CP] Check Pods Manifest.lock */,
 				75851F751F87F96C0034CF88 /* Sources */,
+				75DEA4711F88045E00CFFF38 /* ShellScript */,
 				75851F761F87F96C0034CF88 /* Frameworks */,
 				75851F771F87F96C0034CF88 /* Resources */,
 				8681E13B1803BE4D1B16E936 /* [CP] Embed Pods Frameworks */,
@@ -175,6 +179,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hackatonGrapqhqlApiClient/Pods-hackatonGrapqhqlApiClient-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		75DEA4711F88045E00CFFF38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift\n";
+		};
 		8681E13B1803BE4D1B16E936 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75851F7F1F87F96C0034CF88 /* ViewController.swift in Sources */,
+				75DEA4741F88095500CFFF38 /* API.swift in Sources */,
 				75851F7D1F87F96C0034CF88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +405,7 @@
 				75851F8D1F87F96C0034CF88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
