@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		355075878EA1A7678EF4DAB3 /* Pods_hackatonGrapqhqlApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1DB97D3057763DF37DECA7 /* Pods_hackatonGrapqhqlApiClient.framework */; };
+		755D5F641F880D5600B96673 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D5F631F880D5600B96673 /* API.swift */; };
 		75851F7D1F87F96C0034CF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75851F7C1F87F96C0034CF88 /* AppDelegate.swift */; };
 		75851F7F1F87F96C0034CF88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75851F7E1F87F96C0034CF88 /* ViewController.swift */; };
 		75851F821F87F96C0034CF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75851F801F87F96C0034CF88 /* Main.storyboard */; };
 		75851F841F87F96C0034CF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75851F831F87F96C0034CF88 /* Assets.xcassets */; };
 		75851F871F87F96C0034CF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75851F851F87F96C0034CF88 /* LaunchScreen.storyboard */; };
-		75DEA4741F88095500CFFF38 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEA4731F88095500CFFF38 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B1DB97D3057763DF37DECA7 /* Pods_hackatonGrapqhqlApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackatonGrapqhqlApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		159E6D13B0A160D04D11F897 /* Pods-hackatonGrapqhqlApiClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackatonGrapqhqlApiClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-hackatonGrapqhqlApiClient/Pods-hackatonGrapqhqlApiClient.release.xcconfig"; sourceTree = "<group>"; };
 		7334C099FD458E31B963E896 /* Pods-hackatonGrapqhqlApiClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackatonGrapqhqlApiClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackatonGrapqhqlApiClient/Pods-hackatonGrapqhqlApiClient.debug.xcconfig"; sourceTree = "<group>"; };
+		755D5F631F880D5600B96673 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		75851F791F87F96C0034CF88 /* hackatonGrapqhqlApiClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackatonGrapqhqlApiClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75851F7C1F87F96C0034CF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75851F7E1F87F96C0034CF88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		75851F831F87F96C0034CF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75851F861F87F96C0034CF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75851F881F87F96C0034CF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75DEA4731F88095500CFFF38 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				75851F7C1F87F96C0034CF88 /* AppDelegate.swift */,
+				755D5F631F880D5600B96673 /* API.swift */,
 				75851F7E1F87F96C0034CF88 /* ViewController.swift */,
-				75DEA4731F88095500CFFF38 /* API.swift */,
 				75851F801F87F96C0034CF88 /* Main.storyboard */,
 				75851F831F87F96C0034CF88 /* Assets.xcassets */,
 				75851F851F87F96C0034CF88 /* LaunchScreen.storyboard */,
@@ -236,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75851F7F1F87F96C0034CF88 /* ViewController.swift in Sources */,
-				75DEA4741F88095500CFFF38 /* API.swift in Sources */,
+				755D5F641F880D5600B96673 /* API.swift in Sources */,
 				75851F7D1F87F96C0034CF88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
