@@ -1,0 +1,13 @@
+query AllCovers{
+	cover(section:"TNChicas") {
+		section,
+		containerList {
+			id
+			type
+			data {
+				id
+				type
+			}
+		}
+	}
+}

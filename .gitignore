@@ -6,3 +6,4 @@
 Pods/*
 Podfile.lock
 */xcuserdata/*
+*/API.swift
