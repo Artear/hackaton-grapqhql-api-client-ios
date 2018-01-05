@@ -1,13 +1,9 @@
-query AllCovers{
+query AllCoversTwo{
 	cover(section:"TNChicas") {
 		section,
 		containerList {
 			id
-			type
-			data {
-				id
-				type
-			}
+            type
 		}
 	}
 }

@@ -9,6 +9,7 @@
 import UIKit
 import Apollo
 
+let apollo = ApolloClient(url: URL(string:"https://cover-graphql-server.herokuapp.com/graphql")!)
 class ViewController: UIViewController {
 
 	override func viewDidLoad() {

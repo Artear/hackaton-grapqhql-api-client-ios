@@ -11,9 +11,7 @@ import Apollo
 
 class HackatonTableViewController: UITableViewController {
 
-	var title : [AllCoversQuery.Data]
-	
-	
+	//var title : [AllCoversQuery.Data]
 	
     override func viewDidLoad() {
         super.viewDidLoad()

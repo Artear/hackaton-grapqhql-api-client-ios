@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		355075878EA1A7678EF4DAB3 /* Pods_hackatonGrapqhqlApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1DB97D3057763DF37DECA7 /* Pods_hackatonGrapqhqlApiClient.framework */; };
 		755D5F641F880D5600B96673 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D5F631F880D5600B96673 /* API.swift */; };
-		755D5F671F880F4300B96673 /* HackatonTableViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 755D5F661F880F4300B96673 /* HackatonTableViewController.graphql */; };
 		755D5F691F88115E00B96673 /* HackatonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D5F681F88115E00B96673 /* HackatonTableViewController.swift */; };
 		75851F7D1F87F96C0034CF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75851F7C1F87F96C0034CF88 /* AppDelegate.swift */; };
 		75851F7F1F87F96C0034CF88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75851F7E1F87F96C0034CF88 /* ViewController.swift */; };
 		75851F821F87F96C0034CF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75851F801F87F96C0034CF88 /* Main.storyboard */; };
 		75851F841F87F96C0034CF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75851F831F87F96C0034CF88 /* Assets.xcassets */; };
 		75851F871F87F96C0034CF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75851F851F87F96C0034CF88 /* LaunchScreen.storyboard */; };
+		E1BCACE61F881D9F00B02610 /* CoverOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BCACE51F881D9F00B02610 /* CoverOneTableViewController.swift */; };
+		E1BCACE81F881DAF00B02610 /* CoverTwoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BCACE71F881DAF00B02610 /* CoverTwoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,6 @@
 		159E6D13B0A160D04D11F897 /* Pods-hackatonGrapqhqlApiClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackatonGrapqhqlApiClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-hackatonGrapqhqlApiClient/Pods-hackatonGrapqhqlApiClient.release.xcconfig"; sourceTree = "<group>"; };
 		7334C099FD458E31B963E896 /* Pods-hackatonGrapqhqlApiClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackatonGrapqhqlApiClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackatonGrapqhqlApiClient/Pods-hackatonGrapqhqlApiClient.debug.xcconfig"; sourceTree = "<group>"; };
 		755D5F631F880D5600B96673 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		755D5F661F880F4300B96673 /* HackatonTableViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = HackatonTableViewController.graphql; sourceTree = "<group>"; };
 		755D5F681F88115E00B96673 /* HackatonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackatonTableViewController.swift; sourceTree = "<group>"; };
 		75851F791F87F96C0034CF88 /* hackatonGrapqhqlApiClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackatonGrapqhqlApiClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75851F7C1F87F96C0034CF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +32,10 @@
 		75851F831F87F96C0034CF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75851F861F87F96C0034CF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75851F881F87F96C0034CF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BCACE51F881D9F00B02610 /* CoverOneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverOneTableViewController.swift; sourceTree = "<group>"; };
+		E1BCACE71F881DAF00B02610 /* CoverTwoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverTwoTableViewController.swift; sourceTree = "<group>"; };
+		E1BCACEA1F8824ED00B02610 /* AllCoversOne.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllCoversOne.graphql; sourceTree = "<group>"; };
+		E1BCACEB1F8824ED00B02610 /* AllCoversTwo.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllCoversTwo.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +79,11 @@
 		75851F7B1F87F96C0034CF88 /* hackatonGrapqhqlApiClient */ = {
 			isa = PBXGroup;
 			children = (
+				E1BCACE91F8824ED00B02610 /* Graphql */,
+				E1BCACE21F881CE900B02610 /* Cover */,
 				75851F7C1F87F96C0034CF88 /* AppDelegate.swift */,
 				755D5F631F880D5600B96673 /* API.swift */,
 				75851F7E1F87F96C0034CF88 /* ViewController.swift */,
-				755D5F661F880F4300B96673 /* HackatonTableViewController.graphql */,
 				755D5F681F88115E00B96673 /* HackatonTableViewController.swift */,
 				75851F801F87F96C0034CF88 /* Main.storyboard */,
 				75851F831F87F96C0034CF88 /* Assets.xcassets */,
@@ -95,6 +100,40 @@
 				159E6D13B0A160D04D11F897 /* Pods-hackatonGrapqhqlApiClient.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1BCACE21F881CE900B02610 /* Cover */ = {
+			isa = PBXGroup;
+			children = (
+				E1BCACE31F881CE900B02610 /* V1 */,
+				E1BCACE41F881CE900B02610 /* V2 */,
+			);
+			path = Cover;
+			sourceTree = "<group>";
+		};
+		E1BCACE31F881CE900B02610 /* V1 */ = {
+			isa = PBXGroup;
+			children = (
+				E1BCACE51F881D9F00B02610 /* CoverOneTableViewController.swift */,
+			);
+			path = V1;
+			sourceTree = "<group>";
+		};
+		E1BCACE41F881CE900B02610 /* V2 */ = {
+			isa = PBXGroup;
+			children = (
+				E1BCACE71F881DAF00B02610 /* CoverTwoTableViewController.swift */,
+			);
+			path = V2;
+			sourceTree = "<group>";
+		};
+		E1BCACE91F8824ED00B02610 /* Graphql */ = {
+			isa = PBXGroup;
+			children = (
+				E1BCACEA1F8824ED00B02610 /* AllCoversOne.graphql */,
+				E1BCACEB1F8824ED00B02610 /* AllCoversTwo.graphql */,
+			);
+			path = Graphql;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				75851F871F87F96C0034CF88 /* LaunchScreen.storyboard in Resources */,
-				755D5F671F880F4300B96673 /* HackatonTableViewController.graphql in Resources */,
 				75851F841F87F96C0034CF88 /* Assets.xcassets in Resources */,
 				75851F821F87F96C0034CF88 /* Main.storyboard in Resources */,
 			);
@@ -232,7 +270,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -242,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1BCACE81F881DAF00B02610 /* CoverTwoTableViewController.swift in Sources */,
 				755D5F691F88115E00B96673 /* HackatonTableViewController.swift in Sources */,
 				75851F7F1F87F96C0034CF88 /* ViewController.swift in Sources */,
 				755D5F641F880D5600B96673 /* API.swift in Sources */,
+				E1BCACE61F881D9F00B02610 /* CoverOneTableViewController.swift in Sources */,
 				75851F7D1F87F96C0034CF88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
